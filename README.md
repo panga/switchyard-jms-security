@@ -8,7 +8,7 @@ The helper method ```SecureMessage.fromRequest``` creates the following credenti
 
 * Build
 
-mvn clean install
+```mvn clean install```
 
 * Maven
 
@@ -20,7 +20,7 @@ mvn clean install
 </dependency>
 ```
 
-* Usage
+* Usage (WildFly)
 
 ```java
 @ApplicationScoped
@@ -37,7 +37,7 @@ public class QueueSender {
 
     public void sendToQueue(final Serializable object) {
         final SecureMessage message = SecureMessage.fromRequest(servletRequest, object);
-        jmsContext.createProducer().send(importarXmlQueue, message);
+        jmsContext.createProducer().send(destination, message);
     }
 }
 ```
