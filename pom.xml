@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>io.github.panga</groupId>
     <artifactId>switchyard-jms-security</artifactId>
-    <version>1.0.0-SNAPSHOT</version>
+    <version>1.0.0</version>
     <name>SwitchYard JMS Security</name>
     <packaging>jar</packaging>
     <properties>
